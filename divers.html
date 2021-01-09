@@ -1,0 +1,139 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="CV.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <title>Curriculum Vitae</title>
+      <script>var timer;
+
+        $(".parent").on("mouseover", function() {
+          clearTimeout(timer);
+          openSubmenu();
+        }).on("mouseleave", function() {
+          timer = setTimeout(
+            closeSubmenu
+          , 1000);
+        });
+        
+        
+        
+        function validate(){
+          var name = document.getElementById("name").value;
+          var subject = document.getElementById("subject").value;
+          var phone = document.getElementById("phone").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          var error_message = document.getElementById("error_message");
+          
+          error_message.style.padding = "10px";
+          
+          var text;
+          if (!name.match(/^[A-Z\s]+$/)) {
+            text = "S'il vous plait entrez Nom et prénom valide";
+            error_message.innerHTML = text;
+            return false;
+          }
+          if(email.indexOf("@") == -1 || email.length < 6){
+            text = "S'il vous plait entrez un email valide";
+            error_message.innerHTML = text;
+            return false;
+          }
+          if( !phone.match(/^\d{8}$/) ){
+            text = "S'il vous plait entrez un numéro de téléphone valide";
+            error_message.innerHTML = text;
+            return false;
+          }
+          if(!subject.match( /^[A-Za-z\s]+$/)){
+            text = "Veuillez saisir le sujet correct";
+            error_message.innerHTML = text;
+            return false;
+          }
+          
+          
+          if(!message.match( /^[A-Za-z\s]+$/)){
+            text = "Veuillez saisir le message correct";
+            error_message.innerHTML = text;
+            return false;
+          }
+          alert("Form Submitted Successfully!");
+          return true;
+        }</script>   
+    </head>
+  <body>
+    <header class="page-header">
+        
+      <h1 id="text">Firas Krifa</h1>
+      
+      <h1 id="text">Etudiant en licence fondamentale en informatique</h1>
+      </header>
+      <nav>
+        <ul>
+          <li  id="q"  ><a href="index.html">Présentation</a></li>
+     <li  id="q"  > <a href="Formation.html"> Formation </a>
+      <ul>
+        <li id="q"  ><a href="Formation.html">Formation IA</a></li>
+        <li id="q" ><a href="Formation.html">Formation MA</a></li>
+       </ul>
+
+       <li id="q" > <a href="experience.html"> Experiance </a>
+        <ul>
+          <li id="q" ><a href="experience.html">Experiance 1 </a></li>
+          <li id="q" ><a href="experience.html">Experiance 2  </a></li>
+          <li id="q" ><a href="experience.html">Experiance 3 </a></li>
+         </ul>
+
+         <li id="q" > <a href="competance.html"> Competance </a>
+          <ul>
+            <li id="q" ><a href="competance.html">Langages de programmation</a></li>
+            <li id="q" ><a href="competance.html">Libraries & Frameworks  </a></li>
+           </ul>
+
+           <li id="q"> <a href="divers.html"> Divers </a>
+            <ul>
+              <li id="q" ><a href="divers.html">Langues</a></li>
+              <li id="q" ><a href="divers.html">Intérêts et Loisirs </a></li>
+              <li id="q" ><a href="divers.html">Certification</a></li>
+             </ul>
+             <li id="q" > <a href="contact.html"> Contact</a>
+              <ul>
+               </ul>
+      
+      </nav>
+   
+   
+  
+   
+   
+   
+<h2 id="pre" >Divers</h2>
+<h1 id ="text">Compétences Générales</h1>
+
+        
+<h1 id ="text">Langues</h1>
+<ul>
+<li>Arabe(langue maternelle)</li>
+<li>Français(bilingue)</li>
+ <li>Anglais(bilingue) </li>
+<li> Espagnol(notions) </li> </ul>
+         
+<h1 id ="text">Intérêts et Loisirs</h1>
+
+<ul> <li>Voyager</li>
+            <li> football</li>
+            <li>cyclisme Intelligence artificielle</li>  </ul>
+            <h1 id ="text">Certification</h1>
+            <ul>
+            <li>HTML </li>
+            <li> CSS</li>
+            <li>JAVASCRIPT</li> 
+        </ul>
+
+
+       
+        
+        
+        </body>
+        </html>
+        

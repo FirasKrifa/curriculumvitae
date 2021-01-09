@@ -1,0 +1,306 @@
+body {
+	background-color:#C0C0C0 ; 
+	font-family: Arial ; 
+	color: black  ;
+	width: 100%
+}
+
+#text {
+	font-style: italic;
+	font-size: 30px;
+	font-weight: normal;
+    color:  black ;
+    ;
+    text-decoration: underline;
+}
+#pre {
+  font-style: italic;
+	font-size: 30px;
+	font-weight: normal;
+    color:  #7B68EE;
+    ;
+    text-decoration: underline;
+}
+
+
+
+#p{
+	font-family: courier;
+	font-size: 25px;
+	font-weight: normal;
+    color: black ;
+    	
+}
+#q{
+	font-family: courier;
+	font-size: 18px;
+	font-weight: normal;
+    color: #FFFFFF ;
+    	
+}
+
+
+
+h2{
+	 text-align: center;
+	 color:   #6495ed;
+	 font-size: 30px;
+	border-style: ridge;
+    margin-top: 10px;
+}
+
+
+table {
+border: medium solid red;
+border-collapse: collapse;
+width: 50%;
+}
+th {
+font-family: monospace;
+border: thin solid red;
+width: 50%;
+padding: 5px;
+background-color: #D0E3FA;
+background-image: url(sky.jpg);
+}
+td {
+font-family: sans-serif;
+border: thin solid red;
+width: 50%;
+padding: 5px;
+text-align: center;
+background-color: #ffffff;
+}
+header.page-header {
+    background: no-repeat left/cover url(/media/examples/puppy-header-logo.jpg);
+    display: flex;
+    height: 120px;
+    min-width: 120px;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
+}
+
+header.page-header > h1 {
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
+        fantasy;
+    margin: 2%;
+}
+
+
+.site-footer {
+  background-color: black;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+#social-wrapper {
+	text-align: center;
+}
+
+/*Social Media Icons*/
+.social-wrapper {
+	text-align: center;
+}
+
+.social-wrapper ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.googleplus-icon,
+.youtube-icon,
+.foursquare-icon{
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+	filter: alpha(opacity=60);
+  border-radius: 25px;
+}
+
+.twitter-icon:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.googleplus-icon:hover,
+.youtube-icon:hover,
+.foursquare-icon:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+.footer-nav p {
+	text-align: center;
+}
+
+
+
+
+
+
+nav > ul > li {
+  display: inline-block
+}
+nav > ul > li ul {
+  visibility: hidden;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  transition: 0s 0s;
+
+}
+nav > ul > li:hover ul {
+  visibility: visible;
+  transition-delay: 0s;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  width: 150px;
+  background: #7B68EE;
+  margin: 2px;
+  position: relative;
+  padding: 10px;
+  border-radius: 5%
+}
+nav a {
+  display: block;
+  
+}
+
+body {
+  padding: 10px;
+}
+
+.submenu {
+  visibility: hidden;
+  transition: 0s 0s; /* delay of 1 seconds on hover off */
+}
+.parent:hover .submenu {
+  visibility: visible;
+  transition-delay: 0s; /* react immediately on hover */
+}
+
+
+
+
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+.wrapper{
+  position: absolute;
+  top: 100%;
+  left: 25%;
+ 
+  transform: translate(-50%,-50%);
+  max-width: 888px;
+  width: 40%;
+  background: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+
